@@ -1,10 +1,21 @@
+img{
+	max-height: 100px;
+	max-width: 100px;
+	position: relative;
+
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/background.png');
+	background-repeat: no-repeat;
+}
 
 .footer {
   position: relative;
   width: 100%;
   background: #151414; 
-  min-height: 50px;
-  padding: 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +23,23 @@
   font-family: 'Poppins', sans-serif;
 }
 
+header{
+	position: relative;
+	background-color:transparent;
+	padding: 5px;
+  background-color:none;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+
 .social-icon,
 .menu {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin: 0px 0;
   flex-wrap: wrap;
 }
 
@@ -28,7 +49,7 @@
 }
 
 .social-icon__link {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   margin: 0 10px;
   display: inline-block;
@@ -39,9 +60,8 @@
 }
 
 .menu__link {
-  font-size: 1.1rem;
+  font-size: 2rem;
   color: #fff;
-  margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
   text-decoration: none;
@@ -55,8 +75,7 @@
 
 .footer p {
   color: #aaa;
-  margin: 0px 0 0px 0;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -67,19 +86,13 @@
 
 .section .section-center {
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	left: 0;
 	right: 0;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
-#booking {
-	font-family: 'Poppins', sans-serif;
-	background-image: url('../img/background.png');
-	background-size: cover;
-	background-position: center;
-}
 
 #booking::before {
 	content: '';
