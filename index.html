@@ -56,12 +56,12 @@
 
 			<div class="col-md-4 col-md-pull-7">
 				<div class="booking-form">
-				<form method="post" action="result.html">
+				<form method="post" action="result.php">
 			<!-- start location -->
 
 				<div class="form-group">
 					<span class="form-label">Your start location</span>
-						<select class="form-control" required>
+						<select name="start" class="form-control" required>
 							<option value="" disabled selected hidden>Please select..</option>
 							<option value="Makumbura">Makumbura</option>
 							<option value="Kadawatha">Kadawatha</option>
@@ -73,7 +73,7 @@
 
 				<div class="form-group">
 					<span class="form-label">Your end location</span>
-						<select class="form-control" required>
+						<select name="end" class="form-control" required >
 							<option value="" disabled selected hidden>Please select..</option>
 							<option value="Makumbura">Makumbura</option>
 							<option value="Kadawatha">Kadawatha</option>
@@ -88,7 +88,7 @@
 					<div class="col-sm-6">
 						<div class="form-group">
 							<span class="form-label">Date</span>
-							<input class="form-control" type="date" required>
+							<input name="date" class="form-control" type="date" required>
 						</div>
 					</div>		
 					</div>
@@ -96,7 +96,7 @@
 			<!--button-->
 
 						<div class="form-btn">
-							<button class="submit-btn">Check availability</button>
+							<input type="submit" value="Check availability" class="submit-btn"></input>
 						</div>
 					</form>
 				</div>
