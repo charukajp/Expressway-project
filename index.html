@@ -25,6 +25,13 @@
 	<!-- script-->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<style>
+		@media (max-height: 500px) or (max-width: 1000px) {
+    .ctrldisplay {
+      display: none;
+    }
+}
+	</style>
 
 </head>
 
@@ -32,8 +39,8 @@
 	<div id="booking" class="section">
 		<!--header-->
 	<header >
-	<div >
-		<a href="index.html"><img src="img/logo.png" width="50%" height="50%"> </a>
+	<div class="ctrldisplay">
+		<!--<a href="index.html"><img src="img/logo.png" width="50%" height="50%"> </a>-->
 	</div>
 	</header>
 
@@ -63,9 +70,12 @@
 					<span class="form-label">Your start location</span>
 						<select name="start" class="form-control" required>
 							<option value="" disabled selected hidden>Please select..</option>
-							<option value="Makumbura">Makumbura</option>
-							<option value="Kadawatha">Kadawatha</option>
 							<option value="Galle">Galle</option>
+							<option value="Gampaha">Gampaha</option>							
+							<option value="Kadawatha">Kadawatha</option>
+							<option value="Makumbura">Makumbura</option>							
+							<option value="Matara">Matara</option>
+							<option value="Panadura">Panadura</option>
 						</select>
 					<span class="select-arrow"></span>
 				</div>
@@ -75,9 +85,12 @@
 					<span class="form-label">Your end location</span>
 						<select name="end" class="form-control" required >
 							<option value="" disabled selected hidden>Please select..</option>
-							<option value="Makumbura">Makumbura</option>
-							<option value="Kadawatha">Kadawatha</option>
 							<option value="Galle">Galle</option>
+							<option value="Gampaha">Gampaha</option>							
+							<option value="Kadawatha">Kadawatha</option>
+							<option value="Makumbura">Makumbura</option>							
+							<option value="Matara">Matara</option>
+							<option value="Panadura">Panadura</option>
 						</select>
 					<span class="select-arrow"></span>
 				</div>	
@@ -108,10 +121,11 @@
 
 <!-- footer -->
 
-
+<div class="ctrldisplay" > 
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation" style="background: #151414;">
-    <div class="container" >     
-	<div class="footer">
+    <div class="container" >  
+		
+		<div class="footer">
     	<ul class="social-icon">
       		<li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
       		</li>
@@ -124,7 +138,8 @@
     	</ul>
     	<p> Develop and designed by undergraduates of university of Sri Jayawardenepura Sri Lanka </p>   
     	<p>&copy;2023 | All Rights Reserved</p>
-  	</div>
+  		</div>
+		</div>
 	</div>
 </div>
 </body>

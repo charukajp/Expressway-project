@@ -13,7 +13,7 @@ body{
 }
 
 .footer {
-  position: relative;
+  position: FIXED;
   width: 100%;
   background: #151414; 
   display: flex;
@@ -240,5 +240,5 @@ table {
     background-color: #f2f2f2;
   }
 
-	
+  
   

@@ -63,6 +63,11 @@ $Busend=$_POST["end"];
 			padding:20px;
 			align:center;
 		}
+
+		@media (max-height: 500px) or (max-width: 1000px) {
+    .ctrldisplay {
+      display: none;
+    }
 	</style>
 </head>
 
@@ -137,7 +142,7 @@ $Busend=$_POST["end"];
 					<span class="form-label"> Date: <?php echo $_POST["date"]; ?></span> <br>
 					<br><br>
 					<span class="form-label">Ticket price </span>
-						<span class="form-control" width="20px">
+						<span class="form-control" >
 						<?php 
 						if (mysqli_num_rows($connect) > 0) {			
 							$row = mysqli_fetch_assoc($connect);							
@@ -166,7 +171,8 @@ $Busend=$_POST["end"];
 						<br>
 						<br>
 							
-				</div>					
+				</div>		
+							
 				</form>
 					
 			</div>
@@ -177,7 +183,7 @@ $Busend=$_POST["end"];
 	</div>
 
 <!-- footer -->
-
+<div class="ctrldisplay">
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation" style="background: #151414;">
     <div class="container" >     
 	<div class="footer">
@@ -196,7 +202,7 @@ $Busend=$_POST["end"];
   	</div>
 	</div>
 </div>
-	
+</div>
 </body>
 
 </html>
