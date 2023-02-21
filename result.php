@@ -1,7 +1,7 @@
 <?php
 $Busstart=$_POST["start"];
 $Busend=$_POST["end"];
- $conn=mysqli_connect("localhost","root","","expressway"); //database connection  
+ $conn=mysqli_connect("localhost","id20270618_root","Root@123456789","id20270618_expressway"); //database connection  
  //hostname, username, password, database name  
   
  //check database connect or not  
@@ -51,6 +51,8 @@ $Busend=$_POST["end"];
 
 	<!-- bootstrap footer -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="css/style2.css">
 
 	<!-- script-->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -78,7 +80,7 @@ $Busend=$_POST["end"];
 	<div >	
 		<br>
 		<br>	
-		<!-- <a href="index.html"><img src="img/logo.png" width="50%" height="50%"> </a> -->
+		
 	</div>
 	</header>
 	
@@ -99,6 +101,8 @@ $Busend=$_POST["end"];
 			<div class="col-md-7 col-md-push-5">
 			<div class="form-group">
 			<div class="booking-cta">
+			    
+			    <!--data result-->
 				<table>
 					<caption> <h2 align="center" style="font: size 5px; color:#ebecee;"> Bus schedule </h2></caption> 
 						<tr>  
@@ -196,6 +200,7 @@ $Busend=$_POST["end"];
       		</li>
       		<li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
       		</li>
+      		<li><p>Help Desk - 0784528396/0765532280</p></li>
     	</ul>
     	<p> Develop and designed by undergraduates of university of Sri Jayawardenepura Sri Lanka </p>   
     	<p>&copy;2023 | All Rights Reserved</p>

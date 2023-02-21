@@ -1,0 +1,92 @@
+body {
+    background-color: #f1f1f1;
+    background-image: url("img/background.png");
+    background-size: 800px 600px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 0.8s ease-in-out infinite;
+  }
+  
+  .version-select {
+    text-align: center;
+    padding-top: 100px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .version-select h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #f1f1f1;
+  }
+  header{
+	position: relative;
+	background-color:transparent;
+	padding: 5px;
+  background-color:none;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .android-button
+  {
+    display: inline-block;
+    background-color: #d1390b;
+    color: #fdfafa;
+    font-size: 24px;
+    padding: 20px 60px;
+    margin: 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  .web-button
+  {
+    display: inline-block;
+    background-color: #6b97d1;
+    color: #fcfafa;
+    font-size: 24px;
+    padding: 20px 60px;
+    margin: 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .android-button:hover,
+  .web-button:hover {
+    background-color: #2980b9;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
