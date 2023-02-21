@@ -1,0 +1,128 @@
+/* Style for the header */
+header {
+    background-color: #ecebeb;
+    color: #000000;
+    padding: 20px;
+    text-align: left;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  /* Style for the user name */
+  .user-name {
+    float: right;
+  }
+  
+  /* Style for the body */
+ body {
+    background: url(../img/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding-top: 80px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  /* Style for the card */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #161616;
+  }
+  
+  /* Style for the button */
+  .card button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+  }
+  .card button:hover{
+    background-color: rgb(30, 182, 0);
+  }
+  
+  /* Style for the modal */
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(136, 136, 136, 0.8);
+  }
+  
+  .modal-content {
+      background-color: rgb(26, 26, 26);
+      color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 5px;
+      width: 80%;
+  }
+  
+  /* Style for the close button */
+  .close {
+      color: #fff;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: -10px;
+  }
+  
+  .close:hover, .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  .logo {
+    font-size: 24px;
+    color: #000000;
+    margin-right: 20px;
+  }
+  
+  
+/* Responsive design */
+@media screen and (min-width: 768px) {
+	header {
+				font-size: 32px;
+	}
+	body {
+				padding-top: 120px;
+	}
+	.card {
+				width: 30%;
+	}
+}
